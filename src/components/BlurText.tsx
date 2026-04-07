@@ -47,10 +47,7 @@ export default function BlurText({
           initial={{ filter: 'blur(10px)', opacity: 0, y: yStart }}
           animate={
             inView
-              ? [
-                  { filter: 'blur(5px)', opacity: 0.5, y: -5 },
-                  { filter: 'blur(0px)', opacity: 1, y: 0 },
-                ]
+              ? { filter: 'blur(0px)', opacity: 1, y: 0 }
               : { filter: 'blur(10px)', opacity: 0, y: yStart }
           }
           transition={{
